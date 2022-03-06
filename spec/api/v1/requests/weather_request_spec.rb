@@ -5,7 +5,7 @@ RSpec.describe "background requests" do
     VCR.turn_off!
     get "/api/v1/forecast?location=denver,co"
 
-    expect(response.status).to be(successful)
+    expect(response).to be_successful
 
   end
 end
