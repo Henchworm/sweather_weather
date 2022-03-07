@@ -6,5 +6,8 @@ RSpec.describe "forecast requests" do
     get "/api/v1/forecast?location=denver,co"
 
     expect(response).to be_successful
+    parsed = JSON.parse(response.body)
+    binding.pry
+
   end
 end

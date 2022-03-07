@@ -1,4 +1,5 @@
 class WeatherFacade
+  
   def self.forecast(coords)
     response = WeatherService.get_forecast(coords)
 

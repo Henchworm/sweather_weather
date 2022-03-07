@@ -4,6 +4,9 @@
       "/Users/chrishewitt/Turing/3mod/sweater_weather/app/controllers/api/v1/forecast_controller.rb": {
         "lines": [
           1,
+          null,
+          1,
+          1,
           1,
           1,
           1,
@@ -59,6 +62,7 @@
       "/Users/chrishewitt/Turing/3mod/sweater_weather/app/facades/weather_facade.rb": {
         "lines": [
           1,
+          null,
           1,
           1,
           null,
@@ -103,7 +107,6 @@
           1,
           1,
           1,
-          1,
           null,
           null,
           1,
@@ -135,7 +138,7 @@
           1,
           1,
           null,
-          8,
+          5,
           null,
           null,
           null,
@@ -150,6 +153,19 @@
           null,
           null,
           null,
+          null,
+          null
+        ]
+      },
+      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/serializers/forecast_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
           null,
           null
         ]
@@ -221,6 +237,6 @@
         }
       }
     },
-    "timestamp": 1646613408
+    "timestamp": 1646614433
   }
 }
