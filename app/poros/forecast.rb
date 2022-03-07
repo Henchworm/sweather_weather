@@ -22,7 +22,7 @@ class Forecast
       uvi: data[:uvi],
       visibility: data[:visibility],
       conditions: data[:weather].first[:description],
-      conditions: data[:weather].first[:icon]
+      icon: data[:weather].first[:icon]
     }
   end
 

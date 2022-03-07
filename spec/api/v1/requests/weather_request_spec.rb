@@ -29,6 +29,8 @@ RSpec.describe "forecast requests" do
     expect(parsed["data"]["attributes"]["current_weather"]).to have_key("humidity")
     expect(parsed["data"]["attributes"]["current_weather"]).to have_key("uvi")
     expect(parsed["data"]["attributes"]["current_weather"]).to have_key("visibility")
+    expect(parsed["data"]["attributes"]["current_weather"]).to have_key("conditions")
+    expect(parsed["data"]["attributes"]["current_weather"]).to have_key("icon")
 
     expect(parsed["data"]["attributes"]["daily_weather"]).to be_an(Array)
     expect(parsed["data"]["attributes"]["daily_weather"].length).to eq(5)
