@@ -1,6 +1,48 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/poros/book_forecast_search.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/services/map_quest_service.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          3,
+          3,
+          null,
+          null,
+          null,
+          1,
+          3,
+          3,
+          null,
+          null
+        ]
+      },
       "/Users/chrishewitt/Turing/3mod/sweater_weather/app/controllers/api/v1/backgrounds_controller.rb": {
         "lines": [
           1,
@@ -105,23 +147,6 @@
       "/Users/chrishewitt/Turing/3mod/sweater_weather/app/facades/map_quest_facade.rb": {
         "lines": [
           1,
-          1,
-          2,
-          2,
-          null,
-          null
-        ]
-      },
-      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/services/map_quest_service.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          2,
-          2,
-          null,
-          null,
-          null,
           1,
           2,
           2,
@@ -252,6 +277,29 @@
           null
         ]
       },
+      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/poros/book_search.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          5,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/chrishewitt/Turing/3mod/sweater_weather/app/mailers/application_mailer.rb": {
         "lines": [
           0,
@@ -279,6 +327,22 @@
         "branches": {
         }
       },
+      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/controllers/api/v1/book_search_controller.rb": {
+        "lines": [
+          0,
+          null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
       "/Users/chrishewitt/Turing/3mod/sweater_weather/app/channels/application_cable/connection.rb": {
         "lines": [
           0,
@@ -300,6 +364,6 @@
         }
       }
     },
-    "timestamp": 1646621469
+    "timestamp": 1646690968
   }
 }
