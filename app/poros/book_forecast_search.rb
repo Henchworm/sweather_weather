@@ -2,9 +2,11 @@ class BookForecastSearch
   attr_reader :id,
               :total_books_found,
               :forecast,
-              :books
+              :books,
+              :destination
   def initialize(book_data, weather_data, search_param)
     @id = nil
+    @destination = search_param
     @total_books_found = book_data.total_books_found
     @forecast = forecast_formatter(weather_data)
     @books = book_data.books

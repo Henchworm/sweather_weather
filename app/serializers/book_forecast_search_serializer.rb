@@ -3,5 +3,5 @@ class BookForecastSearchSerializer
   set_id :id
   set_type "books"
 
-  attributes :forecast, :total_books_found, :books
+  attributes :destination, :forecast, :total_books_found, :books
 end
