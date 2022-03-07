@@ -6,6 +6,7 @@ class Background
               :url
 
   def initialize(data)
+    #should be refactored to get rid of .first facade
     @id = nil
     @description = data[:results].first[:description]
     @url = data[:results].first[:urls][:raw]
