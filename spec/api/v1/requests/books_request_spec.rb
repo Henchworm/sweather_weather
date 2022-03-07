@@ -26,5 +26,6 @@ RSpec.describe "book request" do
       expect(book[:title]).to be_a(String)
       expect(book[:publisher]).to be_an(Array)
     end
+    binding.pry
   end
 end
