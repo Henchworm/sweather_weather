@@ -1,6 +1,7 @@
 class BookSearch
   attr_reader :total_books_found,
               :books
+
   def initialize(data)
     @total_books_found = data[:numFound]
     @books = books_formatter(data[:docs])
