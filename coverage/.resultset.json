@@ -1,20 +1,45 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/poros/book_forecast_search.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          null,
+          null,
+          1,
+          null,
+          2,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/chrishewitt/Turing/3mod/sweater_weather/app/poros/book_search.rb": {
         "lines": [
           1,
           1,
           null,
           1,
-          2,
-          2,
+          3,
+          3,
           null,
           null,
           1,
-          2,
+          3,
           null,
-          10,
+          15,
           null,
           null,
           null,
@@ -289,31 +314,6 @@
           null
         ]
       },
-      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/poros/book_forecast_search.rb": {
-        "lines": [
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
       "/Users/chrishewitt/Turing/3mod/sweater_weather/app/serializers/book_forecast_search_serializer.rb": {
         "lines": [
           1,
@@ -397,6 +397,6 @@
         }
       }
     },
-    "timestamp": 1646677415
+    "timestamp": 1646678361
   }
 }
