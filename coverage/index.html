@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-03-07T11:39:21-07:00">2022-03-07T11:39:21-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-03-07T11:56:24-07:00">2022-03-07T11:56:24-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -30,7 +30,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.67
+         1.7
        </span>
     </span> hits/line
     )
@@ -238,7 +238,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#ffd389915976f303ad41b15766615f6c6bbdf0ce" class="src_link" title="app/poros/book_search.rb">app/poros/book_search.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">18</td>
+            <td class="cell--number">19</td>
             <td class="cell--number">8</td>
             <td class="cell--number">8</td>
             <td class="cell--number">0</td>
@@ -308,7 +308,7 @@
             <td class="cell--number">6</td>
             <td class="cell--number">6</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.00</td>
+            <td class="cell--number">1.50</td>
             
           </tr>
         
@@ -869,7 +869,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.02
+         2.05
        </span>
     </span> hits/line
     )
@@ -978,7 +978,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#ffd389915976f303ad41b15766615f6c6bbdf0ce" class="src_link" title="app/poros/book_search.rb">app/poros/book_search.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">18</td>
+            <td class="cell--number">19</td>
             <td class="cell--number">8</td>
             <td class="cell--number">8</td>
             <td class="cell--number">0</td>
@@ -1048,7 +1048,7 @@
             <td class="cell--number">6</td>
             <td class="cell--number">6</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.00</td>
+            <td class="cell--number">1.50</td>
             
           </tr>
         
@@ -3001,51 +3001,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="4">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  def initialize(data)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="3" data-linenumber="5">
-            <span class="hits">3</span>
-            
-
-            
-
-            <code class="ruby">    @total_books_found = data[:numFound]</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="3" data-linenumber="6">
-            <span class="hits">3</span>
-            
-
-            
-
-            <code class="ruby">    @books = books_formatter(data[:docs])</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="7">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="8">
+          <li class="never" data-hits="" data-linenumber="4">
             
             
 
@@ -3056,95 +3012,40 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="9">
+          <li class="covered" data-hits="1" data-linenumber="5">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">  def books_formatter(docs)</code>
+            <code class="ruby">  def initialize(data)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="3" data-linenumber="10">
+          <li class="covered" data-hits="3" data-linenumber="6">
             <span class="hits">3</span>
             
 
             
 
-            <code class="ruby">    docs.map do |book|</code>
+            <code class="ruby">    @total_books_found = data[:numFound]</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="11">
-            
-            
-
+          <li class="covered" data-hits="3" data-linenumber="7">
+            <span class="hits">3</span>
             
 
-            <code class="ruby">      {</code>
+            
+
+            <code class="ruby">    @books = books_formatter(data[:docs])</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="15" data-linenumber="12">
-            <span class="hits">15</span>
-            
-
-            
-
-            <code class="ruby">        isbn: book[:isbn],</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="13">
-            
-            
-
-            
-
-            <code class="ruby">        title: book[:title],</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="14">
-            
-            
-
-            
-
-            <code class="ruby">        publisher: book[:publisher]</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="15">
-            
-            
-
-            
-
-            <code class="ruby">      }</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="16">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="17">
+          <li class="never" data-hits="" data-linenumber="8">
             
             
 
@@ -3155,7 +3056,117 @@
         </div>
       
         <div>
+          <li class="never" data-hits="" data-linenumber="9">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="10">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def books_formatter(docs)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="3" data-linenumber="11">
+            <span class="hits">3</span>
+            
+
+            
+
+            <code class="ruby">    docs.map do |book|</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="12">
+            
+            
+
+            
+
+            <code class="ruby">      {</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="15" data-linenumber="13">
+            <span class="hits">15</span>
+            
+
+            
+
+            <code class="ruby">        isbn: book[:isbn],</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby">        title: book[:title],</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="15">
+            
+            
+
+            
+
+            <code class="ruby">        publisher: book[:publisher]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="16">
+            
+            
+
+            
+
+            <code class="ruby">      }</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
           <li class="never" data-hits="" data-linenumber="18">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="19">
             
             
 
@@ -4375,8 +4386,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="4">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="4">
+            <span class="hits">2</span>
             
 
             
@@ -4419,8 +4430,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="8">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="8">
+            <span class="hits">2</span>
             
 
             
@@ -4430,8 +4441,8 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="9">
-            <span class="hits">1</span>
+          <li class="covered" data-hits="2" data-linenumber="9">
+            <span class="hits">2</span>
             
 
             
