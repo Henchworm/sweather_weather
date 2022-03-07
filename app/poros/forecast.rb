@@ -18,7 +18,7 @@ class Forecast
       sunset: Time.at(data[:sunset]),
       temperature: data[:temp],
       feels_like: data[:feels_like],
-      humiditiy: data[:humidity],
+      humidity: data[:humidity],
       uvi: data[:uvi],
       visibility: data[:visibility],
       conditions: data[:weather].first[:description],
