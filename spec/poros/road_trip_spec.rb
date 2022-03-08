@@ -18,6 +18,6 @@ RSpec.describe RoadTrip do
     roadtrip = RoadTripFacade.new_road_trip(origin, destination)
     expect(roadtrip).to be_a(RoadTrip)
     expect(roadtrip.arrival_weather).to eq("No Data.")
-    expect(roadtrip.travel_tine).to eq("Impossible route.")
+    expect(roadtrip.travel_time).to eq("Impossible route.")
   end
 end
