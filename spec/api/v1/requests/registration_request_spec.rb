@@ -40,6 +40,24 @@ RSpec.describe "user registration" do
     expect(parsed[:message]).to eq("Password confirmation doesn't match Password")
   end
 
+  it "registers a user from request(sad path no email address provided)" do
+    user_params = {
+      "password": "password",
+      "password_confirmation": "password"
+    }
+    headers = {
+      'Content-Type' => 'application/json',
+      'Accept' => 'application/json'
+    }
+    post '/api/v1/users', headers: headers, params: user_params.to_json
+
+    expect(response).to_not be_successful
+    parsed = JSON.parse(response.body, symbolize_names: true)
+    expect(parsed[:status]).to eq(400)
+    expect(parsed[:message]).to eq("Email is invalid and Email can't be blank")
+  end
+
+
   it "registers a user from request(sad path no pw both fields blank)" do
     user_params = {
       "email": "whatever@example.com",
