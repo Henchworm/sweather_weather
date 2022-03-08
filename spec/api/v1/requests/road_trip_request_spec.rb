@@ -49,10 +49,7 @@ RSpec.describe "road trip request" do
   end
 
 
-  it "makes a request to plan a road trip(sad path impossible route)" do
-    VCR.eject_cassette
-    VCR.turn_off!
-    WebMock.enable_net_connect!
+  it "makes a request to plan a road trip(sad path impossible route)", :vcr do
     user_1 = User.create!(email: "dave@gmail.com", password: "password")
 
     user_params =
@@ -70,6 +67,6 @@ RSpec.describe "road trip request" do
     expect(response).to be_successful
     parsed = JSON.parse(response.body, symbolize_names: true)
     expect(parsed[:data][:attributes][:travel_time]).to eq("Impossible route.")
-    expect(parsed[:data][:attributes][:travel_time]).to eq("No Data.")
+    expect(parsed[:data][:attributes][:arrival_weather]).to eq("No Data.")
   end
 end
