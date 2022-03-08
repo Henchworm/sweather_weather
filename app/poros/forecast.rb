@@ -50,10 +50,4 @@ class Forecast
     }
     end
   end
-
-
-# uvi, numeric (int or float), as given by OpenWeather
-# visibility, numeric (int or float), as given by OpenWeather
-# conditions, the first ‘description’ field from the weather data as given by OpenWeather
-# icon, string, as given by OpenWeather
 end
