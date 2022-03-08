@@ -1,7 +1,6 @@
 class Api::V1::UsersController < ApplicationController
 
   def create
-    # params[:user] = JSON.parse(request.raw_post)
     params[:user] = JSON.parse(request.raw_post)
     user = User.new(user_params)
     if user.save
