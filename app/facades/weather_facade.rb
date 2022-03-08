@@ -10,4 +10,8 @@ class WeatherFacade
     }
     Forecast.new(time_range_values)
   end
+
+  def self.time_specfic_forecast(coords, travel_time)
+    response = WeatherService.get_time_specific_forecast(coords, travel_time)
+  end
 end
