@@ -5,7 +5,7 @@ class WeatherFacade
 
     time_range_values = {
       current_weather: response[:current],
-      hourly_weather: response[:hourly].first(8),
+      hourly_weather: response[:hourly],
       daily_weather: response[:daily].first(5)
     }
     Forecast.new(time_range_values)

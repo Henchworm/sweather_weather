@@ -69,4 +69,27 @@ RSpec.describe "road trip request" do
     expect(parsed[:data][:attributes][:travel_time]).to eq("Impossible route.")
     expect(parsed[:data][:attributes][:arrival_weather]).to eq("No Data.")
   end
+
+  it "makes a request to plan a road trip(happy path long trip weather)", :vcr do
+    user_1 = User.create!(email: "dave@gmail.com", password: "password")
+
+    user_params =
+    {
+      "origin": "New York, NY",
+      "destination": "Los Angeles, CA",
+      "api_key": user_1.api_key
+    }
+    headers = {
+      'Content-Type' => 'application/json',
+      'Accept' => 'application/json'
+    }
+
+    post "/api/v1/road_trip", headers: headers, params: user_params.to_json
+    expect(response).to be_successful
+    parsed = JSON.parse(response.body, symbolize_names: true)
+    expect(parsed[:data][:attributes][:travel_time]).to eq("40:16:00")
+    expect(parsed[:data][:attributes][:arrival_weather][:time]).to eq("03:00:00")
+    expect(parsed[:data][:attributes][:arrival_weather][:temperature]).to eq(56.17)
+    expect(parsed[:data][:attributes][:arrival_weather][:conditions]).to eq("clear sky")
+  end
 end
