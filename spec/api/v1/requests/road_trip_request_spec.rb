@@ -44,7 +44,7 @@ RSpec.describe "road trip request" do
     post "/api/v1/road_trip", headers: headers, params: user_params.to_json
     expect(response).to_not be_successful
     parsed = JSON.parse(response.body, symbolize_names: true)
-    expect(parsed[:status]).to eq("ERROR")
+    expect(parsed[:status]).to eq(401)
     expect(parsed[:message]).to eq("No Access - bad API key")
   end
 
@@ -88,8 +88,8 @@ RSpec.describe "road trip request" do
     expect(response).to be_successful
     parsed = JSON.parse(response.body, symbolize_names: true)
     expect(parsed[:data][:attributes][:travel_time]).to eq("40:16:00")
-    expect(parsed[:data][:attributes][:arrival_weather][:time]).to eq("03:00:00")
-    expect(parsed[:data][:attributes][:arrival_weather][:temperature]).to eq(56.17)
+    expect(parsed[:data][:attributes][:arrival_weather][:time]).to eq("04:00:00")
+    expect(parsed[:data][:attributes][:arrival_weather][:temperature]).to eq(55.6)
     expect(parsed[:data][:attributes][:arrival_weather][:conditions]).to eq("clear sky")
   end
 end
