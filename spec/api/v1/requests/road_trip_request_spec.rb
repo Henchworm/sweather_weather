@@ -26,4 +26,25 @@ RSpec.describe "road trip request" do
     expect(parsed[:data][:attributes][:arrival_weather][:temperature]).to be_a(Float)
     expect(parsed[:data][:attributes][:arrival_weather][:conditions]).to be_a(String)
   end
+
+  it "makes a request to plan a road trip(sad path bad api key)", :vcr do
+    user_1 = User.create!(email: "dave@gmail.com", password: "password")
+
+    user_params =
+    {
+      "origin": "Denver,CO",
+      "destination": "Pueblo,CO",
+      "api_key": "skjfnkjsnfsfjn"
+    }
+    headers = {
+      'Content-Type' => 'application/json',
+      'Accept' => 'application/json'
+    }
+
+    post "/api/v1/road_trip", headers: headers, params: user_params.to_json
+    expect(response).to_not be_successful
+    parsed = JSON.parse(response.body, symbolize_names: true)
+    expect(parsed[:status]).to eq("ERROR")
+    expect(parsed[:message]).to eq("No Access - bad API key")
+  end
 end
