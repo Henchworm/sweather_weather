@@ -336,7 +336,6 @@
           1,
           null,
           1,
-          null,
           8,
           8,
           8,
@@ -384,7 +383,7 @@
           null
         ]
       },
-      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/services/road_trip_serializer.rb": {
+      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/serializers/road_trip_serializer.rb": {
         "lines": [
           1,
           1,
@@ -464,6 +463,6 @@
         ]
       }
     },
-    "timestamp": 1646767811
+    "timestamp": 1646806478
   }
 }

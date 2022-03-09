@@ -87,9 +87,9 @@ RSpec.describe "road trip request" do
     post "/api/v1/road_trip", headers: headers, params: user_params.to_json
     expect(response).to be_successful
     parsed = JSON.parse(response.body, symbolize_names: true)
-    expect(parsed[:data][:attributes][:travel_time]).to eq("40:16:00")
-    expect(parsed[:data][:attributes][:arrival_weather][:time]).to eq("04:00:00")
-    expect(parsed[:data][:attributes][:arrival_weather][:temperature]).to eq(55.6)
-    expect(parsed[:data][:attributes][:arrival_weather][:conditions]).to eq("clear sky")
+    expect(parsed[:data][:attributes][:travel_time]).to be_a(String)
+    expect(parsed[:data][:attributes][:arrival_weather][:time]).to be_a(String)
+    expect(parsed[:data][:attributes][:arrival_weather][:temperature]).to be_a(Float)
+    expect(parsed[:data][:attributes][:arrival_weather][:conditions]).to be_a(String)
   end
 end
