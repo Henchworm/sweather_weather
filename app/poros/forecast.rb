@@ -9,6 +9,7 @@ class Forecast
     @current_weather = current_formatter(time_range_values[:current_weather])
     @hourly_weather = hourly_formatter(time_range_values[:hourly_weather])
     @daily_weather = daily_formatter(time_range_values[:daily_weather])
+    binding.pry
   end
 
   def current_formatter(data)

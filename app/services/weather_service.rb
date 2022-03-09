@@ -8,7 +8,8 @@ end
 
   def self.get_forecast(coords)
     response = conn.get("/data/2.5/onecall?lat=#{coords.lat}&lon=#{coords.lon}&units=imperial")
-
+binding.pry
     parsed = JSON.parse(response.body, symbolize_names: true)
+
   end
 end
