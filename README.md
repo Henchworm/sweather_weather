@@ -100,7 +100,7 @@ Condensed Response:
     }
 }
 ```
-### POST localhost:3000/api/v1/users
+### POST http://localhost:3000/api/v1/users
 
 ```
 JSON raw body:
@@ -123,7 +123,7 @@ Response:
     }
 }
 ```
-### localhost:3000/api/v1/users (sad path email taken) 
+### POST http://localhost:3000/api/v1/users (sad path email taken) 
 ```
 JSON raw body: 
 {
