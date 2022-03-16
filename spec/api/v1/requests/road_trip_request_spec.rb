@@ -68,8 +68,6 @@ RSpec.describe "road trip request" do
     parsed = JSON.parse(response.body, symbolize_names: true)
     expect(parsed[:data][:attributes][:travel_time]).to eq("Impossible route.")
     expect(parsed[:data][:attributes][:arrival_weather]).to eq("No Data.")
-    expect(parsed[:data][:attributes][:arrival_weather]).to be_a(String)
-
   end
 
   it "makes a request to plan a road trip(happy path long trip weather)", :vcr do
