@@ -130,5 +130,6 @@ RSpec.describe "user registration" do
       parsed = JSON.parse(response.body, symbolize_names: true)
       expect(parsed[:status]).to eq(400)
       expect(parsed[:message]).to eq("Email has already been taken")
+      expect(parsed[:message]).to be_a(String)
     end
 end
