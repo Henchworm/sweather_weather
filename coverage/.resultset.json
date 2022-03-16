@@ -1,25 +1,6 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/controllers/api/v1/forecast_controller.rb": {
-        "lines": [
-          1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          0,
-          null,
-          null
-        ]
-      },
-      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
       "/Users/chrishewitt/Turing/3mod/sweater_weather/app/facades/map_quest_facade.rb": {
         "lines": [
           1,
@@ -30,36 +11,27 @@
           null,
           null,
           1,
-          0,
+          1,
           null,
           null
         ]
       },
-      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/services/map_quest_service.rb": {
+      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/facades/road_trip_facade.rb": {
         "lines": [
           1,
           null,
           1,
           1,
           1,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
           1,
           0,
-          0,
+          null,
           null,
           null
         ]
       },
-      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/poros/coordinate.rb": {
+      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/facades/unsplash_facade.rb": {
         "lines": [
-          1,
           1,
           null,
           1,
@@ -77,12 +49,208 @@
           1,
           null,
           null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/models/user.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          6,
+          null,
+          null
+        ]
+      },
+      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/poros/background.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
           1,
           null,
           null,
           null,
           null,
           1,
+          null,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/poros/forecast.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/poros/road_trip.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0,
+          null,
+          null,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/services/map_quest_service.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
+          2,
+          null,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/services/unsplash_service.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null,
           1,
           null,
           null
@@ -101,131 +269,122 @@
           1,
           1,
           1,
-          1,
+          0,
           null,
           null,
           null
         ]
       },
-      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/poros/forecast.rb": {
+      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/controllers/api/v1/backgrounds_controller.rb": {
         "lines": [
           1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          1,
-          null,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
           null,
           1,
           1,
           null,
-          48,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
           1,
-          1,
-          null,
-          5,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
           null,
           null
         ]
       },
-      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/models/application_record.rb": {
+      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/controllers/application_controller.rb": {
         "lines": [
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/models/user.rb": {
-        "lines": [
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          null,
-          0,
-          null,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/serializers/user_serializer.rb": {
-        "lines": [
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
-          0
-        ],
-        "branches": {
-        }
+          1,
+          null
+        ]
       },
       "/Users/chrishewitt/Turing/3mod/sweater_weather/app/serializers/background_serializer.rb": {
         "lines": [
-          0,
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          null
+        ]
+      },
+      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/controllers/api/v1/sessions_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          3,
+          3,
+          3,
+          3,
+          1,
+          1,
+          null,
+          2,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/serializers/user_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/controllers/api/v1/users_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          8,
+          8,
+          8,
+          2,
+          null,
+          6,
+          null,
+          null,
+          null,
+          1,
+          1,
+          8,
+          null,
+          null
+        ]
+      },
+      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/controllers/api/v1/road_trip_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
           0,
           null,
           0,
-          0,
           null,
-          0,
-          0
-        ],
-        "branches": {
-        }
+          null,
+          null
+        ]
+      },
+      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/poros/coordinate.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
       },
       "/Users/chrishewitt/Turing/3mod/sweater_weather/app/serializers/road_trip_serializer.rb": {
         "lines": [
@@ -298,7 +457,7 @@
         "branches": {
         }
       },
-      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/facades/road_trip_facade.rb": {
+      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/controllers/api/v1/forecast_controller.rb": {
         "lines": [
           0,
           null,
@@ -306,190 +465,6 @@
           0,
           0,
           0,
-          0,
-          0,
-          0,
-          null
-        ],
-        "branches": {
-        }
-      },
-      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/facades/unsplash_facade.rb": {
-        "lines": [
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/poros/background.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/poros/road_trip.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/controllers/api/v1/backgrounds_controller.rb": {
-        "lines": [
-          0,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/controllers/api/v1/road_trip_controller.rb": {
-        "lines": [
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/controllers/api/v1/users_controller.rb": {
-        "lines": [
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/controllers/api/v1/sessions_controller.rb": {
-        "lines": [
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/chrishewitt/Turing/3mod/sweater_weather/app/services/unsplash_service.rb": {
-        "lines": [
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          null,
           0,
           0,
           0
@@ -498,6 +473,6 @@
         }
       }
     },
-    "timestamp": 1646859270
+    "timestamp": 1647452879
   }
 }

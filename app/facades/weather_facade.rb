@@ -8,8 +8,6 @@ class WeatherFacade
       hourly_weather: response[:hourly],
       daily_weather: response[:daily].first(5)
     }
-
-    binding.pry
     Forecast.new(time_range_values)
   end
 end
