@@ -7,8 +7,6 @@ RSpec.describe "forecast requests" do
     expect(response).to be_successful
 
     parsed = JSON.parse(response.body)
-    binding.pry
-
     expect(parsed["data"]["id"]).to eq(nil)
     expect(parsed["data"]["attributes"]).to be_a(Hash)
     expect(parsed["data"]["attributes"]).to have_key("current_weather")
